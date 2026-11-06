@@ -6,7 +6,7 @@ int main(void) {
     int length;
     printf("Enter the number of integers to add: ");
     if (scanf("%d", &length) != 1 || length < 1 || length > 1000) {
-        fprintf(stderr, "Invalid length. ABOT PROGRAM!\n");
+        fprintf(stderr, "Invalid length. ABORT PROGRAM!\n");
         return 1;
     }
     int *values = malloc((size_t)length * sizeof *values);
