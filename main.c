@@ -10,17 +10,12 @@ int main(void) {
         return 1;
     }
     int *values = malloc((size_t)length * sizeof *values);
-    if (values == NULL) {
-        fprintf(stderr, "Allocation failed.\n");
-        return 1;
-    }
+
     printf("Please enter %d values below:\n", length);
     for (int i = 0; i < length; i++) {
         printf("Value #%d: ", i+1);
         if (scanf("%d", &values[i]) != 1 || values[i] < -1000 || values[i] > 1000) {
             fprintf(stderr, "Invalid value.\n");
-            free(values);
-            return 1;
         }
     }
 
