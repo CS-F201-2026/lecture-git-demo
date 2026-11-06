@@ -23,7 +23,7 @@ int main(void) {
             return 1;
         }
     }
-    printf("Total: %d\n", sum_values(values, length));
+    printf("Sum: %d\n", sum_values(values, length));
     free(values);
     return 0;
 }
