@@ -8,6 +8,8 @@ int main(void) {
     assert(sum_values(mixed, 3) == 6);
     assert(sum_values(mixed, 1) == 10);
     assert(sum_values(NULL, 0) == 0);
+    int thousand_test[] = {-1000, 1000};
+    assert(sum_values(thousand_test, 2) == NULL);
     puts("All sum tests passed.");
     return 0;
 }
